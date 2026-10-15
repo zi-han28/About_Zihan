@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+  --color-paper: #f5f7f4;
+  --color-ink: #1b2a27;
+  --color-muted: #55645f;
+  --color-line: #d3dbd6;
+  --color-accent: #1f7a6b;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
