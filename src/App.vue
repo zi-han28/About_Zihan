@@ -1,6 +1,7 @@
 <script setup>
 import profile from './data/profile.js'
 import ProjectItem from './components/ProjectItem.vue'
+import Navbar from './components/navbar.vue'
 
 const links = [
   { label: 'About', href: '#about' },
@@ -9,12 +10,13 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ]
 const year = new Date().getFullYear()
+
 </script>
 
 <template>
   <div class="mx-auto max-w-3xl px-6 pb-20">
     <header class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 py-6">
-      <a href="#top" class="font-display text-xl">{{ profile.name }}</a>
+      <a href="#top" class="font-display text-xl">{{ profile.title}}</a>
       <nav aria-label="Primary" class="flex gap-5 text-sm text-muted">
         <a v-for="link in links" :key="link.href" :href="link.href" class="hover:text-ink">
           {{ link.label }}

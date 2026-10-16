@@ -1,5 +1,6 @@
 // Edit this file to change the site's content. Layout lives in App.vue.
 export default {
+  title: 'Zihan Potfolio Website',
   name: 'Xu Zihan',
   role: 'Computer science student and web developer',
   intro:

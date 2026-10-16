@@ -3,11 +3,11 @@
 @theme {
   --font-display: "Instrument Serif", Georgia, serif;
   --font-sans: "Hanken Grotesk", system-ui, sans-serif;
-  --color-paper: #f5f7f4;
-  --color-ink: #1b2a27;
-  --color-muted: #55645f;
-  --color-line: #d3dbd6;
-  --color-accent: #1f7a6b;
+  --color-paper: #2C434D;
+  --color-ink: #C6AC8F;
+  --color-muted: #EDE5DC;
+  --color-line: #C6AC8F;
+  --color-accent: #EDE5DC;
 }
 
 @layer base {
