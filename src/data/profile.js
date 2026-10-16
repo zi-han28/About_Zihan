@@ -1,11 +1,12 @@
 // Edit this file to change the site's content. Layout lives in App.vue.
 export default {
   title: 'Zihan Potfolio Website',
-  name: 'Xu Zihan',
+  name: 'My Name is Xu Zihan',
   role: 'Computer science student and web developer',
+  introTeaser: 'Bachelor of Science (Honours) Computer Science student with hands-on experience in full-stack web development, data analysis, and machine learning.',
   intro:
     'Bachelor of Science (Honours) Computer Science student with hands-on experience in full-stack web development, data analysis, and machine learning. Skilled in modern web frameworks (Next.js, React, Django), REST APIs, and database management, with additional exposure to AI-powered applications and game development. Brings strong teamwork, communication, and event coordination experience from National Service and part-time roles, with a keen interest in pursuing a career in web development.',
-    
+
   skills: [
     { group: 'Frontend', items: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'] },
     { group: 'Backend', items: ['FastAPI', 'Django REST Framework', 'Node.js/Express', 'Flask'] },

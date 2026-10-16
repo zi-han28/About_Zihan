@@ -53,13 +53,13 @@ onBeforeUnmount(() => {
                 v-if="resumeHref"
                 :href="resumeHref"
                 download="Zihan-Resume2026.pdf"
-                class="rounded-md border-2 border-accent px-5 py-1 text-accent hover:bg-accent hover:text-paper">Resume</a>
+                class="rounded-md border-2 border-alt px-5 py-1 text-alt hover:bg-alt hover:text-paper">Resume</a>
             </nav>
 
             <!-- Burger button (mobile) -->
             <button
                 type="button"
-                class="-mr-2 p-2 text-ink hover:text-accent md:hidden"
+                class="-mr-2 p-2 text-ink hover:text-alt md:hidden"
                 aria-label="Menu"
                 aria-controls="mobile-menu"
                 :aria-expanded="menuOpen"
@@ -80,14 +80,14 @@ onBeforeUnmount(() => {
         id="mobile-menu"
         aria-label="Mobile"
         class="fixed top-20 right-0 bottom-0 z-40 flex w-[70%] flex-col items-center justify-center gap-8 bg-paper text-lg">
-        <a v-for="link in links" :key="link.href" :href="link.href" class="hover:text-accent" @click="closeMenu">
+        <a v-for="link in links" :key="link.href" :href="link.href" class="hover:text-alt" @click="closeMenu">
             {{ link.label }}
         </a>
         <a
             v-if="resumeHref"
             :href="resumeHref"
             download="Zihan-Resume2026.pdf"
-            class="rounded-md border-2 border-accent px-5 py-1 text-accent hover:bg-accent hover:text-paper"
+            class="rounded-md border-2 border-alt px-5 py-1 text-alt hover:bg-alt hover:text-paper"
             @click="closeMenu"
         >Resume</a>
         </nav>

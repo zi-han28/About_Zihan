@@ -27,6 +27,7 @@ Files listed in .gitignore will be excluded.
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.0",
     "@vitejs/plugin-vue": "^6.0.0",
+    "daisyui": "^5.7.50",
     "tailwindcss": "^4.1.0",
     "vite": "^7.0.0"
   }
@@ -36,8 +37,6 @@ Files listed in .gitignore will be excluded.
 
 ## File Structure
 
-- 📁 Files/
-  - 📄 resume.pdf
 - 📄 Proile.js
 - 📄 README.md
 - 📄 index.html
@@ -46,8 +45,11 @@ Files listed in .gitignore will be excluded.
 - 📄 project-structure.md
 - 📁 src/
   - 📄 App.vue
+  - 📁 Files/
+    - 📄 Resume_Xu Zihan.pdf
   - 📁 components/
     - 📄 ProjectItem.vue
+    - 📄 input.vue
     - 📄 navbar.vue
   - 📁 data/
     - 📄 profile.js
