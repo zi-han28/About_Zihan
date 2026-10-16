@@ -36,6 +36,8 @@ Files listed in .gitignore will be excluded.
 
 ## File Structure
 
+- 📁 Files/
+  - 📄 resume.pdf
 - 📄 Proile.js
 - 📄 README.md
 - 📄 index.html

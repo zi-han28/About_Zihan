@@ -14,15 +14,8 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
+  <Navbar :title="profile.title" :links="links" resumeHref="/resume.pdf"/>
   <div class="mx-auto max-w-3xl px-6 pb-20">
-    <header class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 py-6">
-      <a href="#top" class="font-display text-xl">{{ profile.title}}</a>
-      <nav aria-label="Primary" class="flex gap-5 text-sm text-muted">
-        <a v-for="link in links" :key="link.href" :href="link.href" class="hover:text-ink">
-          {{ link.label }}
-        </a>
-      </nav>
-    </header>
 
     <main id="top">
       <section class="pt-16 pb-20">
@@ -31,10 +24,6 @@ const year = new Date().getFullYear()
         <p class="mt-4 max-w-xl text-lg text-muted">{{ profile.intro }}</p>
       </section>
 
-      <section id="about" class="py-10">
-        <h2 class="mb-4 font-display text-3xl">About</h2>
-        <p class="max-w-prose text-muted">{{ profile.about }}</p>
-      </section>
 
       <section id="skills" class="py-10">
         <h2 class="mb-6 font-display text-3xl">Skills</h2>

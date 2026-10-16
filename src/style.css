@@ -3,6 +3,7 @@
 @theme {
   --font-display: "Instrument Serif", Georgia, serif;
   --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+  --color-navbar: #18242A;
   --color-paper: #2C434D;
   --color-ink: #C6AC8F;
   --color-muted: #EDE5DC;
@@ -23,4 +24,32 @@
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
   }
+}
+
+.link-hover {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.link-hover:hover {
+  transform: translateY(-3px);
+}
+
+.link-hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: #A6A6A6;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.link-hover:hover::before {
+  transform: scaleY(1);
 }
