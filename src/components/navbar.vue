@@ -74,22 +74,30 @@ onBeforeUnmount(() => {
     </header>
 
     <!-- Mobile menu -->
-    <div v-if="menuOpen" class="md:hidden">
-        <div class="fixed inset-x-0 top-20 bottom-0 z-40 bg-ink/30" @click="closeMenu"></div>
+    <Transition
+        enter-active-class="transition-opacity"
+        enter-from-class="opacity-0"
+        leave-active-class="transition-opacity "
+        leave-to-class="opacity-0">
+        <div v-if="menuOpen" class="fixed inset-x-0 top-20 bottom-0 z-40 bg-ink/30 md:hidden" @click="closeMenu"></div>
+    </Transition>
+ 
+    <Transition enter-active-class="swing-in-top-fwd" leave-active-class="swing-out-top-bck">
         <nav
-        id="mobile-menu"
-        aria-label="Mobile"
-        class="fixed top-20 right-0 bottom-0 z-40 flex w-[70%] flex-col items-center justify-center gap-8 bg-paper text-lg">
-        <a v-for="link in links" :key="link.href" :href="link.href" class="hover:text-alt" @click="closeMenu">
-            {{ link.label }}
-        </a>
-        <a
-            v-if="resumeHref"
-            :href="resumeHref"
-            download="Zihan-Resume2026.pdf"
-            class="rounded-md border-2 border-alt px-5 py-1 text-alt hover:bg-alt hover:text-paper"
-            @click="closeMenu"
-        >Resume</a>
+            v-if="menuOpen"
+            id="mobile-menu"
+            aria-label="Mobile"
+            class="fixed top-20 right-0 bottom-0 z-40 flex w-[35%] flex-col items-center justify-center gap-8 bg-paper text-lg md:hidden">
+            <a v-for="link in links" :key="link.href" :href="link.href" class="hover:text-alt" @click="closeMenu">
+                {{ link.label }}
+            </a>
+            <a
+                v-if="resumeHref"
+                :href="resumeHref"
+                download="Zihan-Resume2026.pdf"
+                class="rounded-md border-2 border-alt px-5 py-1 text-alt hover:bg-alt hover:text-paper"
+                @click="closeMenu"
+            >Resume</a>
         </nav>
-    </div>
+    </Transition>
 </template>

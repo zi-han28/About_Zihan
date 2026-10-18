@@ -43,16 +43,29 @@ Files listed in .gitignore will be excluded.
 - 📄 package-lock.json
 - 📄 package.json
 - 📄 project-structure.md
+- 📁 public/
+  - 📄 Resume_Xu Zihan.pdf
+  - 📁 images/
+    - 📄 backend_icon.png
+    - 📄 database_icon.png
+    - 📄 frontend_icon.png
+    - 📄 tools_icon.png
 - 📁 src/
   - 📄 App.vue
-  - 📁 Files/
-    - 📄 Resume_Xu Zihan.pdf
   - 📁 components/
+    - 📄 Hero.vue
     - 📄 ProjectItem.vue
-    - 📄 input.vue
+    - 📄 Skills.vue
     - 📄 navbar.vue
   - 📁 data/
     - 📄 profile.js
+  - 📁 directives/
+    - 📄 reveal.js
+      - Functions:
+        - getObserver
+      - Methods:
+        - mounted
+        - unmounted
   - 📄 main.js
     - Imports:
       - import { createApp } from 'vue'

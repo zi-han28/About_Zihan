@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
+
 defineProps({
   name: { type: String, required: true },
   role: { type: String, default: '' },
@@ -26,7 +27,7 @@ function onDialogClick(e) {
 </script>
 
 <template>
-  <section class="flex min-h-[calc(100svh-5rem)] items-center py-12">
+  <section class="flex min-h-[calc(100svh-5rem)] items-center pt-12">
     <div class="flex w-full flex-col items-start gap-10 lg:flex-row-reverse lg:items-center lg:justify-between">
       <!-- Picture: on top on mobile, on the right from lg up -->
       <div v-if="photo" class="w-40 shrink-0 sm:w-56">
@@ -45,28 +46,5 @@ function onDialogClick(e) {
         </p>
       </div>
     </div>
-
-              <!-- <button
-            v-if="intro"
-            type="button"
-            class="underline decoration-line underline-offset-4 hover:text-accent hover:decoration-accent"
-            @click="openDialog"
-          >More…</button>
-
-    <dialog
-      ref="dialog"
-      aria-label="More about me"
-      class="m-auto w-full max-w-lg rounded-md border border-line bg-paper p-0 text-ink backdrop:bg-ink/40"
-      @click="onDialogClick"
-    >
-      <div class="p-6">
-        <p>{{ intro }}</p>
-        <form method="dialog" class="mt-6 text-right">
-          <button class="rounded-md border-2 border-accent px-5 py-1 text-accent hover:bg-accent hover:text-paper">
-            Close
-          </button>
-        </form>
-      </div>
-    </dialog> -->
   </section>
 </template>
