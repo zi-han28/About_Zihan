@@ -18,7 +18,7 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <Navbar :title="profile.title" :links="links" resumeHref="/resume.pdf"/>
+  <Navbar :title="profile.title" :links="links" resumeHref="/Resume_Xu_Zihan.pdf"/>
   <div class="mx-auto" >
     <main id="top">
       <section id="about" class=" mx-auto max-w-5xl px-6 pb-5">

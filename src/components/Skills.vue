@@ -22,7 +22,7 @@ defineProps({
             <img
                 :src="skill.photo"
                 :alt="`${skill.group} icon`"
-                class="aspect-4/5 w-full rounded-md object-contain h-48 sm:w-80 sm:h-64 md:w-96 md:h-80"
+                class="aspect-4/5 w-full rounded-md object-contain h-48 sm:w-80 sm:h-64 md:w-96 md:h-80" loading="lazy"
                 />
             <h3 class="mb-4 text-[30px] text-muted">{{ skill.group }}</h3>
             <ul class="flex flex-wrap gap-2">

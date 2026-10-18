@@ -37,6 +37,7 @@ Files listed in .gitignore will be excluded.
 
 ## File Structure
 
+- 📄 .gitignore
 - 📄 Proile.js
 - 📄 README.md
 - 📄 index.html
@@ -46,6 +47,9 @@ Files listed in .gitignore will be excluded.
 - 📁 public/
   - 📄 Resume_Xu Zihan.pdf
   - 📁 images/
+    - 📄 Elearning.png
+    - 📄 MusicReccomendation.png
+    - 📄 SocialPlatform.png
     - 📄 backend_icon.png
     - 📄 database_icon.png
     - 📄 frontend_icon.png
@@ -53,8 +57,9 @@ Files listed in .gitignore will be excluded.
 - 📁 src/
   - 📄 App.vue
   - 📁 components/
+    - 📄 Footer.vue
     - 📄 Hero.vue
-    - 📄 ProjectItem.vue
+    - 📄 Projects.vue
     - 📄 Skills.vue
     - 📄 navbar.vue
   - 📁 data/

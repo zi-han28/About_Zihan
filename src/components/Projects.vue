@@ -62,6 +62,7 @@ const filteredProjects = computed(() => {
             :alt="`${project.title} screenshot`"
             loading="lazy"
             class="aspect-video w-full object-cover"
+            
             />
             <div class="flex flex-1 flex-col p-5">
             <p class="text-sm text-muted">{{ project.context }}</p>
@@ -76,7 +77,7 @@ const filteredProjects = computed(() => {
                 <span v-else>{{ project.title }}</span>
             </h3>
             <p class="mt-3 text-muted">{{ project.summary }}</p>
-            <button class="btn" @click="(e) => e.target.nextElementSibling.showModal()">open modal</button>
+            <button class="btn" @click="(e) => e.target.nextElementSibling.showModal()">Learn More...</button>
             <dialog class="modal">
                 <div class="modal-box">
                     <h3 class="text-lg font-bold">{{ project.title }}</h3>
