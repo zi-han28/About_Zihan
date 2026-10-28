@@ -14,6 +14,24 @@ export default {
   ],
   projects: [
     {
+      title: 'Internship with NVPC',
+      context: 'Software Engineer Intern, May – Jul 2026',
+      summary:
+        'Automated manual processes for the Digital Innovation team with Power Automate flows, and built a Python pipeline that verifies charities against official registries.',
+      stack: ['Power Automate', 'Python', 'DuckDB', 'SQL', 'Excel', 'SharePoint'],
+      link: '',
+      categories: ['Automation', 'SQL'],
+      modal: 'NVPC',
+      description: [
+        'Designed, built, and maintained multiple interconnected Power Automate flows across production systems for the Digital Innovation team, automating manual processes and conducting UAT testing for each automation operation before deployment.',
+        'Built an email automation flow that sends personalised client emails driven by dynamic Excel sheet data.',
+        'Developed a FormSG response automation flow that captures form submissions via email notifications and updates corresponding records in Excel, keeping downstream data in sync.',
+        "Built a Python-based charity verification pipeline, cross-referencing data.gov.sg and NVPC's giving.sg datasets by using SQL and DuckDB to validate listed companies against official registries.",
+        'Collaborated with other departments to understand their daily operations and identify automation opportunities, translating manual workflows into Power Automate solutions.',
+        'Authored User Guide documentation for Power Automate flows to support adoption, troubleshooting, and handoff across departments.',
+      ],
+    },
+    {
       title: 'Music recommendation app',
       context: 'Final year project',
       summary:
